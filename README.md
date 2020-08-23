@@ -13,6 +13,17 @@
 `mysql.server stop`
 
 
+# ユーザー追加時の設定
+
+## ユーザーの追加
+mysql> `CREATE USER 'user_name'@'host_name';`
+
+## 権限の追加(全ての権限を設定)
+mysql> `grant all *.* to user_name@host_name;`
+
+## 認証方法の変更
+mysql> `mysql> alter user 'user_name'@'host_name' identified with mysql_native_password by 'パスワード';`
+
 
 # MySQLの使い方
 
